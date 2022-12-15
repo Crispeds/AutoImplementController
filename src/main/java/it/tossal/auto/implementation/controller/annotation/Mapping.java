@@ -1,0 +1,31 @@
+package it.tossal.auto.implementation.controller.annotation;
+
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+
+/**
+ * @author <a href="https://www.linkedin.com/in/federico-tosello/">Tosello Federico</a>
+ * @version 1.0.0
+ * @since JAVA 17
+  */
+@Target(ElementType.METHOD) @Retention(RetentionPolicy.CLASS)
+public @interface Mapping {
+
+    /**
+     * Map the controller call to another method call of the same service
+     * @return String containing the call to the method with parameters included:
+         * E.g.
+         * @Mapping("methodName = "getUser(long id, Level.USER)");
+         * public getUser(long id);
+         *
+         * Will become:
+         * public getUser(long id){
+         *     userService.getUser(long id, Level.USER);
+         * }
+         *
+     */
+    String methodCall();
+
+}
