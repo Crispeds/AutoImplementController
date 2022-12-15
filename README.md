@@ -1,3 +1,6 @@
+# DEPENDENCY
+https://github.com/Crispeds/ProcessorManagement/releases/tag/v1.0.0
+
 # auto_controller_implementation
 This project aim to create an annotation for implement interface controller for create less java file and error-prone code.
 
