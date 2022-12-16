@@ -7,11 +7,11 @@ This project aim to create an annotation for implement interface controller for 
 # DOC
 The following annotation are available in the project:
 ## @AutoImplementController(serviceToBind = ...)
-This Annotatiom will bind your controller to the specified service class, for default the controller will call the method of the service class with the same method     name of the controller interface.
+This Annotation will bind your controller to the specified service class, for default the controller will call the method of the service class with the same method     name of the controller interface.
 ## @Mapping(methodCall = "...") E.g. @Mapping(methodCall = "getAdmin(id)")
 For bind a method of the class to a specific method call of the service
 ## @HandleException(exceptionMapper = ...)
-To use custom exception handling provided by the projecty for bind your controller to a specific exception handling using the procided interface ExceptionMapper.
+To use custom exception handling provided by the project for bind your controller to a specific exception handling using the procided interface ExceptionMapper.
 
 ### E.g. 1
 
